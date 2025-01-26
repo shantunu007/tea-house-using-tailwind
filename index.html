@@ -6,7 +6,7 @@
     <title>Tea House</title>
 
     <!-- tailwind cdn -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- google font cdn -->
 
@@ -17,11 +17,6 @@
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/4daf4a1723.js" crossorigin="anonymous"></script>
 
-    <style>
-      .manrope-fonts {
-        font-family: "Manrope", serif;
-      }
-    </style>
 
     <script>
         tailwind.config = {
@@ -29,13 +24,16 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-              }
-            }
-          }
+              },
+              fontFamily: {
+                manrope: ['Manrope', 'sans-serif'],
+              },
+            },
+          },
         }
     </script>
 </head>
-<body class="manrope-fonts">
+<body class="font-manrope">
     <!-- Main Container -->
 
     <main class="max-w-screen-xl mx-auto px-16 lg:px-8">
