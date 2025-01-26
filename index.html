@@ -17,6 +17,12 @@
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/4daf4a1723.js" crossorigin="anonymous"></script>
 
+    <style>
+      .manrope-fonts {
+        font-family: "Manrope", serif;
+      }
+    </style>
+
     <script>
         tailwind.config = {
           theme: {
@@ -29,7 +35,7 @@
         }
     </script>
 </head>
-<body>
+<body class="manrope-fonts">
     <!-- Main Container -->
 
     <main class="max-w-screen-xl mx-auto px-16 lg:px-8">
@@ -232,5 +238,71 @@
           </div> 
       </section> 
     </main>
+
+
+    <!-- Footer Section -->
+
+    <footer class="bg-orange-100 text-gray-700 py-10 px-4 md:px-16">
+      <div class="bg-transparent max-w-screen-xl mx-auto px-8">
+        <!-- logo -->
+        <div class="mb-8 flex justify-between items-center">
+          <div><img src="./images/cup.png" alt=""></div>
+          <div class="flex items-center">
+            <h4 class="mr-10 font-medium">Ready to get strated?</h4>
+            <button class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] px-5 py-2 rounded-md text-white font-bold text-xl">Get Started</button></div>
+        </div> 
+        <!-- Links -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- first column -->
+          <div>
+            <h3 class="font-semibold text-lg mb-3">Quick Links</h3>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Insurance</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div> 
+          <!-- Second column -->
+          <div>
+            <h3 class="font-semibold text-lg mb-3">Our Service</h3>
+            <ul>
+              <li><a href="">Life Insurance</a></li>
+              <li><a href="">Car Insurance</a></li>
+              <li><a href="">Health Insurance</a></li>
+              <li><a href="">House Insurance</a></li>
+            </ul>
+          </div> 
+          <!-- Third column -->
+          <div>
+            <h3 class="font-semibold text-lg mb-3">Quick Links</h3>
+            <ul>
+              <li><a href="">Help</a></li>
+              <li><a href="">FAQs</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div> 
+          <!-- Fourth column -->
+          <div>
+            <h3 class="font-semibold text-lg mb-3">Subscribe to our <br> newsletter</h3>
+            <div class="flex flex-col">
+              <div>
+                <input class="text-sm border-b-2 py-6 w-4/6 md:5/6 focus:outline-0 focus:border-slate-500" placeholder="Email Address" type="text">
+                <i class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] rounded-full p-3 w-10 text-center text-white fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="flex gap-4 mt-10 text-xl">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+              </div>
+            </div>
+          </div> 
+        </div>
+        
+        <div class="text-center mt-10 text-gray-600">
+          <p>&copy; 2027 UIDesign.to - All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
